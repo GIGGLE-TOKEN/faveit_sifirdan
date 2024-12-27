@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-start: 166, 144, 242;
+  --background-end: 44, 23, 97;
+}
+
+:root.dark {
+  --background-start: 0, 0, 0;
+  --background-end: 0, 0, 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Apply background to a wrapper div instead of body for better transitions */
+.page-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start)),
+    rgb(var(--background-end))
+  );
+  transition: background-color 0.3s ease;
+}
+
+/* Add dark mode specific styles */
+.dark .bg-gradient-to-b {
+background: #000000;
+}
+
+.dark .bg-white\/10 {
+background-color: #000000;
+}
+
+.dark .from-\[\#A690F2\] {
+background: #000000;
+}
+
+.dark .to-\[\#2C1761\] {
+background: #000000;
+}
+

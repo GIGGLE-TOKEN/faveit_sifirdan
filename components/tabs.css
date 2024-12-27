@@ -1,0 +1,16 @@
+@tailwind components;
+
+@layer components {
+  .tabs-reset {
+    @apply inline-flex items-center justify-center rounded-none bg-transparent p-0 text-sm transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .tabs-list-reset {
+    @apply inline-flex items-center justify-start rounded-none bg-transparent p-0;
+  }
+
+  .tabs-trigger-reset {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-none bg-transparent px-0 py-2 text-sm transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:text-white data-[state=active]:shadow-none;
+  }
+}
+
